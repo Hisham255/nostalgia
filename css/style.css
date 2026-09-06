@@ -1,0 +1,193 @@
+/* 
+* css global file 
+
+*/
+
+/* ! colors */
+
+:root {
+
+    --black: #121212;
+    --coffee: #df8026;
+
+
+}
+
+/* ? colors */
+
+/* ! fonts */
+
+:root{
+    --playfair-font: "Playfair Display" ;
+    --boo-font: "Black Ops One" ;
+    --inter-font: "Inter" ;
+}
+
+/* ? fonts */
+
+
+/* ! global elements start */
+
+html {
+    scrollbar-width: none;
+}
+
+
+
+.btn:focus,
+.btn:active,
+.btn:active:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ? global elements end */
+
+/* ! global class start  */
+
+.type-theme{
+
+    border-right: 2px solid transparent;
+    /*todo width: ----> num ch */
+    white-space: nowrap;
+    overflow: hidden;
+    
+    animation: type forwards;
+}
+
+
+@keyframes type {
+    0%{width: 0; border-color: #fff;}
+    
+    
+    to{
+        border-color:transparent;
+    }
+}
+/* ? global class end */
+
+
+/* ! global header and navbar section start */
+
+.web-icon {
+    width: 200px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.541);
+    border-radius: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+#nav-list {
+    background-color: rgba(255, 255, 255, 0.541);
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+#nav-list li a {
+    letter-spacing: 1px;
+    outline: none;
+}
+
+#nav-list li {
+    padding: 5px 8px;
+    border-radius: 50px;
+}
+
+#nav-list li:hover {
+    background-color: var(--coffee);
+}
+
+#nav-list li:hover a {
+    color: #fff;
+}
+
+#nav-list li.active {
+    background-color: var(--coffee);
+}
+
+#nav-list li.active a {
+    color: #fff;
+}
+
+#nav-menu {
+    font-size: 30px;
+
+}
+
+.check-out-btn {
+    background-color: var(--coffee);
+    border-radius: 30px;
+    color: #fff;
+}
+
+.check-out-btn:hover {
+    background-color: var(--black);
+    color: #fff;
+}
+
+#show-menu.open {
+    display: flex;
+}
+
+#show-menu {
+    display: none;
+    list-style: none;
+    top: 100%;
+    width: 96%;
+    right: 2%;
+    left: 2%;
+    background-color: rgba(255, 255, 255, 0.541);
+    border: 1px solid rgba(0, 0, 0, 0.313);
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+#show-menu li {
+    width: 90%;
+}
+
+#show-menu li a {
+    letter-spacing: 2px;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-size: 18px;
+}
+
+#show-menu li a:hover {
+    color: var(--coffee);
+}
+
+#show-menu li:last-of-type a {
+    border-bottom: none;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    top: 70px;
+    z-index: 98;
+}
+
+#overlay.open {
+    display: block;
+}
+
+@media (min-width:992px) {
+    #show-menu.open {
+        display: none;
+    }
+
+    #overlay.open {
+        display: none;
+    }
+
+
+}
+
+/* ? global header and navbar section end */
+
+
+

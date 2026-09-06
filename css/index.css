@@ -1,0 +1,84 @@
+
+/* ! header index section satrt */
+
+.header-index-section{
+    height: 730px;
+    width: 100%;
+    background-image: url(../img/2151897256.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* ! hero index section start */
+
+.hero-index-section h1{
+    font-family: var(--boo-font);
+    font-size: clamp(25px, 7vw, 70px);
+    letter-spacing: 2px;
+}
+
+.hero-index-section hr{
+    height: 3px;
+    width: 30%;
+
+}
+
+.hero-index-section .types{
+    height: 360px;
+}
+
+.hero-index-section .types h3{
+    font-size: clamp(20px, 3vw, 35px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--playfair-font);
+    font-weight: 800;
+}
+
+.hero-index-section .types h3:nth-of-type(1){
+    animation-delay: 1s;
+    width: 14ch;
+    animation-timing-function: steps(11);
+    animation-duration: 1.8s;
+}
+.hero-index-section .types h3:nth-of-type(2){
+    animation-delay: 2s;
+    width: 13ch;
+    animation-timing-function: steps(10);
+    animation-duration: 1.4s;
+}
+.hero-index-section .types h3:nth-of-type(3){
+    animation-delay: 3s;
+    width: 16ch;
+    animation-timing-function: steps(13);
+    animation-duration: 2s;
+}
+
+.hero-index-section .info-section{
+    width: 400px;
+    height: 50px;
+    background-color: rgba(240, 248, 255, 0.534);
+    border-radius:300px;
+}
+
+.hero-index-section .info-section a{
+    border-radius: 300px;
+    letter-spacing: 1px;
+    
+}
+
+/* ? hero index section end */
+
+/* ? header index section end */
+
+
+
+
+
+
+
+
+
+
+
+
